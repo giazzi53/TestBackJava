@@ -2,10 +2,14 @@ package com.santanderbr.testBackJava.domain;
 
 import java.util.Date;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "ExpenseCollection")
 public class ExpenseDomain {
+	
+	@Id
+	private String expenseId;
 	
 	private String descricao;
 	
@@ -19,6 +23,10 @@ public class ExpenseDomain {
 		
 	}
 	
+	public String getExpenseId() {
+		return expenseId;
+	}
+
 	public String getDescricao() {
 		return descricao;
 	}
