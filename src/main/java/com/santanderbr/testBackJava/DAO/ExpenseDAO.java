@@ -10,7 +10,7 @@ import com.santanderbr.testBackJava.domain.ExpenseDomain;
 
 @Repository
 public interface ExpenseDAO extends MongoRepository<ExpenseDomain, String>{
-
+	
 	public List<ExpenseDomain> findByCodigousuario(int codigousuario);
 	
 	public List<ExpenseDomain> findByData(Date data);

@@ -18,6 +18,8 @@ public class ExpenseDomain {
 	private int codigousuario;
 	
 	private Date data;
+	
+	private String categoria;
 
 	public ExpenseDomain() {
 		
@@ -57,5 +59,13 @@ public class ExpenseDomain {
 
 	public void setData(Date data) {
 		this.data = data;
+	}
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
 	}
 }
